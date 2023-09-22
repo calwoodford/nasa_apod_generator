@@ -1,0 +1,85 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    margin: 0;
+  }
+  
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18pt;
+    text-align: center;
+  }
+  .container {
+    padding: 60px;
+    align-content: center;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #141414;
+    border-color: rgb(0, 255, 98);
+    border-width: 1px;
+    border-style: dashed;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    height: 850px;
+  }
+
+  .secondContainer {
+    padding: 60px;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #141414;
+    border-color: rgb(0, 255, 98);
+    border-width: 1px;
+    border-style: dashed;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: 850px;
+  }
+
+  #apodImage {
+    display: block;
+    max-width: 700px;
+    max-height: 700px;
+    margin: 0 auto 20px;
+  }
+  
+  #apodText {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    border-color: rgb(0, 255, 98);
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 700px;
+    text-align: center;
+
+  }
+  
+  #apodButton {
+    display: block;
+    font-family: 'Orbitron', sans-serif;
+    align-content: center;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: #beffd0;
+    color: rgb(0, 0, 0);
+
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+  }
+  
+  #apodButton:hover {
+    background-color: #e8ffe3;
+  }
+  
