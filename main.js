@@ -23,7 +23,7 @@ async function returnAPOD() {
     buttonText.textContent = ("Please wait!")
 
     try {
-        const response = await fetch("https://api.nasa.gov/planetary/apod?count=20&api_key=jom8FVWWcBk1c7oAgbNiDRgtLNaOwGxR6KgF7kk2");
+        const response = await fetch("https://api.nasa.gov/planetary/apod?count=1&api_key=jom8FVWWcBk1c7oAgbNiDRgtLNaOwGxR6KgF7kk2");
 
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -43,8 +43,8 @@ async function changeText(){
     // Take returnAPOD Function and store as variable
     const newText = await returnAPOD();
 
-    // Looks for the first item in the object, this will change every time, this is important so that both the image and text are from the same object.
-    let random = 1
+    // Looks for the first item in the object, this will change every time, the API retrieves a random image each call.
+    let random = 0
 
     // Parse API data and return new, required variables.
     let newApodText = newText[random]["explanation"]
@@ -58,7 +58,7 @@ async function changeText(){
     description.textContent = newApodText
     imageElement.src = newApodImage;
 
-    // Reverts button to original state
-    changeButtonText()
+    // Reverts button to original state after 1.5 seconds
+    setTimeout(changeButtonText, 1500);
 }
 
